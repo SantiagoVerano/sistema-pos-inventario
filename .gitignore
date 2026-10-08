@@ -1,0 +1,23 @@
+# Entorno y variables sensibles
+.env
+.env.local
+
+# Python y compilados
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.venv/
+
+# Logs
+logs/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Base de datos local temporal
+*.sqlite3
+*.db

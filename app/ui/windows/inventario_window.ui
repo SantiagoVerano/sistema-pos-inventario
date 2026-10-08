@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InventarioWindow</class>
+ <widget class="QWidget" name="InventarioWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayoutInventario">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutKpis">
+     <item>
+      <widget class="QFrame" name="frmKpiTotal">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout" name="verticalLayoutKpi1">
+        <item><widget class="QLabel" name="lblTituloKpi1"><property name="text"><string>Total Productos</string></property></widget></item>
+        <item><widget class="QLabel" name="lblValorKpi1"><property name="text"><string>0</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frmKpiStockBajo">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout" name="verticalLayoutKpi2">
+        <item><widget class="QLabel" name="lblTituloKpi2"><property name="text"><string>Stock Bajo</string></property></widget></item>
+        <item><widget class="QLabel" name="lblValorKpi2"><property name="text"><string>0</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frmKpiAgotados">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout" name="verticalLayoutKpi3">
+        <item><widget class="QLabel" name="lblTituloKpi3"><property name="text"><string>Agotados</string></property></widget></item>
+        <item><widget class="QLabel" name="lblValorKpi3"><property name="text"><string>0</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutFiltrosInventario">
+     <item>
+      <widget class="QLineEdit" name="txtBuscarInventario">
+       <property name="placeholderText">
+        <string>Filtrar existencias por nombre o código...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cmbFiltroAlmacenCategoria"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnGenerarAjuste">
+       <property name="text"><string>Registrar Ajuste / Movimiento</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="tblInventarioStock"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

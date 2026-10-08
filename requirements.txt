@@ -1,0 +1,24 @@
+# Dependencias Principales del Sistema POS e Inventario
+# Lenguaje Objetivo: Python 3.13
+
+# Configuración y Validación de Entornos
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.1
+
+# Base de Datos y Persistencia (SQLAlchemy 2.0+ y PostgreSQL)
+sqlalchemy>=2.0.30
+psycopg2-binary>=2.9.9
+alembic>=1.13.1
+
+# Seguridad y Criptografía
+argon2-cffi>=23.1.0
+bcrypt>=4.1.3
+
+# Framework Gráfico de Escritorio
+PySide6>=6.7.0
+
+# Pruebas Unitarias e Integración
+pytest>=8.2.0
+pytest-mock>=3.14.0
+pytest-qt>=4.4.0
