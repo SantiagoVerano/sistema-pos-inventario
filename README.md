@@ -31,6 +31,9 @@ PROYECTO/
 └── requirements.txt        # Dependencias fijadas del ecosistema
 ```
 
+## Modelo Entidad-Relación
+![Diagrama de Base de Datos](./docs/modelo-er.jpg)
+
 ### Principales Decisiones Técnicas de Ingeniería:
 
 1. **Prevención de Concurrencia y Stock Negativo:**
@@ -61,6 +64,7 @@ PROYECTO/
 ### Prerrequisitos
 * Python 3.12 o 3.13 instalado.
 * PostgreSQL 15+ ejecutándose localmente o en contenedor.
+  **Nota:** Debes crear una base de datos vacía llamada `corelytics` antes de continuar.
 
 ### 1. Clonar el Repositorio y Crear el Entorno Virtual
 ```bash
